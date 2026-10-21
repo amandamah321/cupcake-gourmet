@@ -106,11 +106,3 @@ O fluxo de finalizar compra segue o diagrama de sequência em `docs/situacao-1/`
 - Pagamento por cartão de crédito e Pix (cartão de débito não implementado).
 - Imagens de produto: coloque arquivos em `public/img/` e preencha `produto.imagem_url` (ex.: `img/chocolate.jpg`); sem imagem, a tela mostra um ícone.
 
-## Organização no Git
-```
-docs/situacao-1/   Kaizen, requisitos, UML, IHC, modelo de dados, dicionário
-docs/situacao-2/   Notas de desenvolvimento e decisões técnicas
-docs/situacao-3/   Testes, formulário dos 5 testadores, correções, vídeo
-```
-Sugestão de commits pequenos e descritivos (`feat:`, `fix:`, `docs:`, `test:`), um por funcionalidade.
-# cupcake-gourmet
