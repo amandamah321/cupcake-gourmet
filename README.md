@@ -1,11 +1,11 @@
 # 🧁 CupCake Gourmet
 
-Loja virtual de cupcakes artesanais. Projeto Integrador Transdisciplinar em Engenharia de Software II.
+Loja virtual de cupcakes - Projeto Integrador Transdisciplinar em Engenharia de Software II.
 
-- **Front-end:** HTML5, CSS3 e JavaScript (sem frameworks), responsivo.
-- **Back-end:** PHP 8.1+ no padrão **MVC**, sem framework.
-- **Banco de dados:** MySQL 8 (acesso via PDO com *prepared statements*).
-- **Testes:** PHPUnit.
+- **Front-end:** HTML5, CSS3 e JavaScript (sem frameworks)
+- **Back-end:** PHP
+- **Banco de dados:** MySQL 8 (acesso via PDO com *prepared statements*)
+- **Testes:** PHPUnit
 
 ## Funcionalidades (requisitos funcionais)
 
@@ -93,16 +93,5 @@ docs/              Documentação por situação-problema
 Fluxo: `Requisição → Router → Controller → (Model / Service) → View → HTML`.
 O fluxo de finalizar compra segue o diagrama de sequência em `docs/situacao-1/`.
 
-## Segurança
-- SQL com *prepared statements* (PDO) — sem concatenar dados do usuário.
-- Saída HTML sempre escapada (`e()`), contra XSS.
-- Token CSRF em todos os formulários POST.
-- Dados de cartão **não são armazenados**: só método, status e referência da transação.
-- Redirecionamentos só para caminhos internos; confirmação de pedido visível só ao comprador.
 
-## Limitações conhecidas (escopo desta versão)
-- Pagamento e frete são **simulados** (sem integração real).
-- Sem login de cliente: o cliente é identificado pelo e-mail informado no checkout.
-- Pagamento por cartão de crédito e Pix (cartão de débito não implementado).
-- Imagens de produto: coloque arquivos em `public/img/` e preencha `produto.imagem_url` (ex.: `img/chocolate.jpg`); sem imagem, a tela mostra um ícone.
 
